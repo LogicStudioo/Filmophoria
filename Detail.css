@@ -1,0 +1,43 @@
+.navbar {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  /* mix-blend-mode: difference; */
+}
+/* Hover */
+span {
+  color: #696969;
+  display: block;
+  transition: 1s;
+}
+a:hover span {
+  transform: translateY(-100%);
+}
+a {
+  margin: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  position: relative;
+  display: block;
+  color: #696969;
+  overflow: hidden;
+  text-decoration: none;
+}
+a::before {
+  position: absolute;
+  content: attr(data-link-alt);
+  top: 100%;
+  opacity: 0;
+  transition: 1s;
+}
+a:hover::before {
+  top: 0;
+  opacity: 1;
+}
+.Detail-information .container {
+  border: 1px solid black;
+  height: 100px;
+  margin-top: 100px;
+}
