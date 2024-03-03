@@ -7,6 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  padding-top: 140px;
+}
 /* Monument, Extended */
 @font-face {
   font-family: Monument, Extended;
@@ -128,34 +131,6 @@ a::before {
 a:hover::before {
   top: 0;
   opacity: 1;
-}
-
-/* Marquee Text */
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 230px;
-  font-family: Monument, Extended;
-  color: #c7c7c7;
-  z-index: -1;
-  position: relative;
-  /* border: 1px solid black; */
-  align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 0px;
-}
-.marquee {
-  /* display: inline-block; */
-  animation: marqueeAnimation 15s linear infinite;
-}
-
-@keyframes marqueeAnimation {
-  0% {
-    transform: translateX(120%);
-  }
-  100% {
-    transform: translateX(-170%);
-  }
 }
 .top-movie-section .col-8 {
   height: fit-content;
@@ -373,7 +348,11 @@ a:hover::before {
   font-size: xxx-large;
   font-family: monospace;
   font-weight: bold;
-  left: 500px;
+  left: 100px;
+}
+.owl-Carousel {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 .owl-Carousel .container-fluid {
   height: fit-content;
@@ -384,7 +363,7 @@ a:hover::before {
 #next {
   /* border: 1px solid black; */
   left: unset;
-  right: 400px;
+  right: 50px;
 }
 /* .button-left,
 .button-right {
