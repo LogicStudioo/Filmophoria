@@ -1,12 +1,16 @@
 <?php
-    $server = 'localhost';
-    $user = 'root';
-    $pass ='';
-    $db = 'db_catalogue_film';
+// Connection to database
+$server = "localhost";
+$username = "root"; 
+$password = ""; 
+$dbname = "db_catalogue_film"; 
 
-    $koneksi = mysqli_connect($server, $user, $pass, $db);
+// Create connection
+$conn = mysqli_connect($server, $username, $password, $dbname);
 
-    if ($koneksi->connect_error){
-        die("koneksi error: ".conn->connect_error);
-    } else echo 'koneksi suskses';
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+else echo '';
 ?>
