@@ -73,3 +73,14 @@ prev.onclick = function () {
   active = active - 1 >= 0 ? active - 1 : active;
   loadShow();
 };
+document.addEventListener('DOMContentLoaded', function() {
+  var image = document.querySelector('.parallax-image');
+  var content = document.querySelector('.content');
+
+  window.addEventListener('scroll', function() {
+      var scrollPosition = window.scrollY;
+      image.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+      content.style.transform = 'translateY(' + scrollPosition * 0.2 + 'px)';
+  });
+});
+
