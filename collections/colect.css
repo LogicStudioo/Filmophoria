@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f5f5f5;
+  padding-top: 140px;
+  font-family: PPmori-Regular;
+}
+.card{
+  border-radius:0px;
+  font-size:14px;
+}
+
+.card:hover {
+  border: 1px solid #BBB;
+  border-bottom:3px solid rgb(33, 102, 251);
+}
+
+.img-card {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.img-card img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.img-card:hover img {
+  transform: scale(1.5);
+}
+
+.col {
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Monument, Extended */
+@font-face {
+  font-family: Monument, Extended;
+  src: url(../Assets/Fonts/MonumentExtended-Regular.otf);
+}
+/* typoGrotesk-black */
+@font-face {
+  font-family: typoGrotesk-black;
+  src: url(../Assets/Fonts/Typo\ Grotesk\ Black\ Demo.otf);
+}
+/* typoGrotesk-black-italic */
+@font-face {
+  font-family: typoGrotesk-black-italic;
+  src: url(../Assets/Fonts/Typo\ Grotesk\ Black\ Italic\ Demo.otf);
+}
+/* typoGrotesk-bold */
+@font-face {
+  font-family: typoGrotesk-bold;
+  src: url(../Assets/Fonts/Typo\ Grotesk\ Bold\ Demo.otf);
+}
+/* typoGrotesk-bold-italic */
+@font-face {
+  font-family: typoGrotesk-bold-italic;
+  src: url(../Assets/Fonts/Typo\ Grotesk\ Bold\ Italic\ Demo.otf);
+}
+/* typoGrotesk-demo */
+@font-face {
+  font-family: typoGrotesk-demo;
+  src: url(../Assets/Fonts/Typo\ Grotesk\ Demo.otf);
+}
+/* typoGrotesk-italic-demo */
+@font-face {
+  font-family: typoGrotesk-italic-demo;
+  src: url(../Assets/Fonts/Typo\ Grotesk\ Italic\ Demo.otf);
+}
+/* typoGrotesk-thin-demo */
+@font-face {
+  font-family: typoGrotesk-thin-demo;
+  src: url(../Assets/Fonts/Typo\ Grotesk\ Thin\ Demo.otf);
+}
+/* typoGrotesk-thin-italic-demo */
+@font-face {
+  font-family: typoGrotesk-thin-italic-demo;
+  src: url(../Assets/Fonts/Typo\ Grotesk\ Thin\ Italic\ Demo.otf);
+}
+/* Arial-Rounded */
+@font-face {
+  font-family: Arial-Rounded;
+  src: url(../Assets/Fonts/ARLRDBD.TTF);
+}
+@font-face {
+  font-family: Arial-Rounded-Bold;
+  src: url(../Assets/Fonts/ARIALUNI.TTF);
+}
+/* PPmori-Regular */
+@font-face {
+  font-family: PPmori-Regular;
+  src: url(../Assets/Fonts/PPMori-Regular.otf);
+}
+/* PPmori-exLight */
+@font-face {
+  font-family: PPmori-exLight;
+  src: url(../Assets/Fonts/PPMori-Extralight.otf);
+}
+/* PPmori-exLight-Italic */
+@font-face {
+  font-family: PPmori-exLight-Italic;
+  src: url(../Assets/Fonts/PPMori-ExtralightItalic.otf);
+}
+/* PPmori-RegItalic */
+@font-face {
+  font-family: PPmori-RegItalic;
+  src: url(../Assets/Fonts/PPMori-RegularItalic.otf);
+}
+/* PPmori-semBold */
+@font-face {
+  font-family: PPmori-semBold;
+  src: url(../Assets/Fonts/PPMori-SemiBold.otf);
+}
+/* PPmori-semBold-Italic */
+@font-face {
+  font-family: face;
+  src: url(../Assets/Fonts/PPMori-SemiBoldItalic.otf);
+}
+.navbar {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  /* mix-blend-mode: difference; */
+}
+/* Hover */
+span {
+  color: #696969;
+  display: block;
+  transition: 1s;
+}
+a:hover span {
+  transform: translateY(-100%);
+}
+a {
+  margin: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  position: relative;
+  display: block;
+  color: #696969;
+  overflow: hidden;
+  text-decoration: none;
+}
+a::before {
+  position: absolute;
+  content: attr(data-link-alt);
+  top: 100%;
+  opacity: 0;
+  transition: 1s;
+}
+a:hover::before {
+  top: 0;
+  opacity: 1;
+}
+.top-movie-section .col-8 {
+  height: fit-content;
+}
+.top-movie-section .container-fluid {
+  /* border: 1px solid black; */
+  height: auto;
+  width: 100%;
+  /* background-color: #f3f3f3; */
+}
+.top-movie-section .Center-section {
+  padding-left: 138px;
+  /* border: 1px solid black; */
+  width: 1765px;
+  height: fit-content;
+}
+.top-movie-section .movie-benner {
+  /* border: 1px solid black; */
+  height: fit-content;
+  width: fit-content;
+}
+.top-movie-section .movie-title {
+  font-family: "PPmori-Bold", sans-serif;
+  font-size: 128px;
+  /* border: 1px solid black; */
+}
+.top-movie-section .movie-subtitle {
+  font-family: PPmori-Regular;
+  /* border: 1px solid black; */
+  width: fit-content;
+  font-size: 64px;
+  justify-content: flex-start;
+  color: gray;
+  height: fit-content;
+}
+.top-movie-section .container-desc {
+  display: flex;
+  padding-top: 40px;
+  margin: 0px;
+  /* border: 1px solid black; */
+  width: 365px;
+  height: fit-content;
+}
+.top-movie-section .movie-desc {
+  font-family: typoGrotesk-bold;
+  font-size: 16px;
+  text-align: left;
+  height: fit-content;
+  width: fit-content;
+  letter-spacing: 1px;
+  line-height: auto;
+}
+.top-movie-section .desc-no {
+  /* border: 1px solid black; */
+  padding-left: 11px;
+  height: 50px;
+  width: fit-content;
+  display: flex;
+  align-items: end;
+  font-family: typoGrotesk-black;
+  font-size: 16px;
+}
+
+
+
+
+
+

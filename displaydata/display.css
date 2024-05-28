@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.Formperform {
+  background-image: url(../Assets/bg-footer.svg);
+  border-radius: 20px;
+  height: 930px;
+}
