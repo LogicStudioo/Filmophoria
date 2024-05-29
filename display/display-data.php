@@ -30,18 +30,18 @@ $result = mysqli_query($con, $query);
                         <h1 class="display-6 title text-center fst-italic " style="font-family: 'Times New Roman', Times, serif; padding-left: 120px" > Filmophoria </h1>
                     </div>
                     <div class="card-body">
-                        <table class="table table-bordered text-center">
+                        <table class="table text-center overflow-auto">
                             <tr>
-                                <td style="background-color: #D9D9D9; color:white;">Movie ID</td>
-                                <td style="background-color: #D9D9D9; color:white;">Title Film</td>
-                                <td style="background-color: #D9D9D9; color:white;">Director</td>
-                                <td style="background-color: #D9D9D9; color:white;">Release Year</td>
-                                <td style="background-color: #D9D9D9; color:white;">Genre</td>
-                                <td style="background-color: #D9D9D9; color:white;">Durations</td>
-                                <td style="background-color: #D9D9D9; color:white;">Rating</td>
-                                <td style="background-color: #D9D9D9; color:white;">Description </td>
-                                <td style="background-color: #D9D9D9; color:white;">Poster</td>
-                                <td style="background-color: #D9D9D9; color:white;"></td>
+                                <td style="background-color: #2D9596; color:white;">Movie ID</td>
+                                <td style="background-color: #2D9596; color:white;">Title Film</td>
+                                <td style="background-color: #2D9596; color:white;">Director</td>
+                                <td style="background-color: #2D9596; color:white;">Release Year</td>
+                                <td style="background-color: #2D9596; color:white;">Genre</td>
+                                <td style="background-color: #2D9596; color:white;">Durations</td>
+                                <td style="background-color: #2D9596; color:white;">Rating</td>
+                                <td style="background-color: #2D9596; color:white;">Description </td>
+                                <td style="background-color: #2D9596; color:white;">Poster</td>
+                                <td style="background-color: #2D9596; color:white;"></td>
                             </tr>
                             <tr>
                                 <?php
@@ -59,8 +59,8 @@ $result = mysqli_query($con, $query);
                                     <td class="text-start"><?php echo $row['description'] ?></td>
                                     <td><?php echo $row['poster']?></td>
                                     <td>
-                                        <a href="?aksi=edit&id=<?php echo $row['movie_id'] ?>" style="width: 58px; margin-bottom:2px;" class="btn btn-sm btn-warning">Edit</a>
-                                        <a href="?aksi=hapus&id=<?php echo $row['movie_id'] ?>" class="btn btn-sm btn-danger">Hapus</a>
+                                        <a href="?aksi=edit&id=<?php echo $row['movie_id'] ?>" style="width: 58px; margin-bottom:2px;" class="btn btn-sm btn-success">Edit</a>
+                                        <a href="?aksi=hapus&id=<?php echo $row['movie_id'] ?>" class="btn btn-sm btn-dark">Hapus</a>
                                         <?php
                                         if ($_GET['aksi'] == 'hapus') {
                                             $id = $_GET['id'];
@@ -77,7 +77,7 @@ $result = mysqli_query($con, $query);
                         ?>
 
                         </table>
-                        <a href="../dataphp/Form-input.php">Insert Data</a>
+                        <a style="color: #028391;  text-decoration: none;" href="../dataphp/Form-input.php"><p class="text-center mt-3" style=" font-family: 'poppins', sans-serif; margin: 0;">Insert Data</p></a>
                     </div>
                 </div>
             </div>

@@ -91,9 +91,9 @@ require "../config/koneksi.php";
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-   <div class="container position-absolute top-50 start-50 translate-middle" style=" border-radius: 10px; padding: 15px; width: 20vw">
-        <p class="display-6 title text-center fst-italic mt-3" style="font-size: 10; font-family: 'Times New Roman', Times, serif; margin: 0; padding-right: 60px">Display Data  </p>
-        <h1 class="display-6 title text-center fst-italic " style="font-family: 'Times New Roman', Times, serif; padding-left: 60px" > Filmophoria </h1>
+   <div class="container position-absolute top-50 start-50 translate-middle" style=" border-radius: 10px; padding: 15px; width: 40vw">
+        <p class="display-6 title text-center fst-italic mt-3" style="font-family: 'Times New Roman', Times, serif; margin: 0; padding-right: 60px">Display Data  </p>
+        <h1 class="display-6 title text-center fst-italic " style="font-family: 'Times New Roman', Times, serif; padding-left: 60px" > Filmophoria </h1>        
         <form id="movieForm" action="" method="post" enctype="multipart/form-data">
 
             <label for="movie_id">No :</label><br>
@@ -128,6 +128,8 @@ require "../config/koneksi.php";
             
             <button style="background-color: #028391; border-radius: 6px; font-weight: bold;" type="submit" name="submit">Submit</button>
         </form>
+        <a style="color: #028391; text-decoration: none;" href="../display/display-data.php" target="_blank"><p class="title text-center mt-3" style=" font-family: 'poppins', sans-serif; margin: 0;">Lihat Data</p></a>
+
    </div>
    <script>
        // JavaScript to display the selected file name
